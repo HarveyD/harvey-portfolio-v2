@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./footer.css";
+import './footer.css';
 
 const Footer: React.StatelessComponent = () => {
   return (

@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./project.css";
-import { SkillEnum } from "../../constants";
+import './project.css';
+import { SkillEnum } from '../../constants';
 
 interface IProps {
   projectDetails: IProject;
@@ -32,16 +32,13 @@ const Project: React.StatelessComponent<IProps> = props => {
       id,
       name,
       description: { overview },
-      img
+      img,
     },
-    projectClick
+    projectClick,
   } = props;
 
   return (
-    <div
-      onClick={() => projectClick(id)}
-      className="project-container"
-    >
+    <div onClick={() => projectClick(id)} className="project-container">
       <div className="heading">
         <div className="fa fa-circle red" />
         <div className="fa fa-circle yellow" />

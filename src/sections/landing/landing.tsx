@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./landing.css";
+import './landing.css';
 
 interface IAnimated {
   currentClass: string;
@@ -29,9 +29,13 @@ class Landing extends React.Component<IProps, IState> {
     super(props);
 
     this.state = {
-      name: { currentClass: "hide-down", animationClass: "show", delay: 150 },
-      title: { currentClass: "hide-down", animationClass: "show", delay: 450 },
-      findOutMore: { currentClass: "hide-down", animationClass: "show", delay: 600 }
+      name: { currentClass: 'hide-down', animationClass: 'show', delay: 150 },
+      title: { currentClass: 'hide-down', animationClass: 'show', delay: 450 },
+      findOutMore: {
+        currentClass: 'hide-down',
+        animationClass: 'show',
+        delay: 600,
+      },
     };
   }
 
@@ -45,27 +49,28 @@ class Landing extends React.Component<IProps, IState> {
 
   public render() {
     const { userDetails } = this.props;
-    const  { name, title, findOutMore } = this.state;
+    const { name, title, findOutMore } = this.state;
 
     return (
       <div className="landing-container">
         <div className="landing-overlay" />
 
         <div className="container container-heading">
-          <h1
-            className={`heading-name ${name && name.currentClass}`}
-          >
+          <h1 className={`heading-name ${name && name.currentClass}`}>
             {userDetails.firstName} {userDetails.lastName}
           </h1>
-          <h2
-            className={`heading-title ${title && title.currentClass}`}
-          >
+          <h2 className={`heading-title ${title && title.currentClass}`}>
             {userDetails.title}
           </h2>
         </div>
 
-        <div className={`container container-footer ${findOutMore && findOutMore.currentClass}`}>
-          <span className="find-out">Find out more about {userDetails.firstName}</span>
+        <div
+          className={`container container-footer ${findOutMore &&
+            findOutMore.currentClass}`}
+        >
+          <span className="find-out">
+            Find out more about {userDetails.firstName}
+          </span>
           <i className="fa fa-chevron-down" />
         </div>
       </div>
@@ -75,7 +80,7 @@ class Landing extends React.Component<IProps, IState> {
   private animateWithDelay(key: string, animateObj: IAnimated) {
     setTimeout(() => {
       this.setState({
-        [key]: { ...animateObj, currentClass: animateObj.animationClass }
+        [key]: { ...animateObj, currentClass: animateObj.animationClass },
       });
     }, animateObj.delay);
   }

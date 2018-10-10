@@ -1,13 +1,11 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./about.css";
-import Portait from "src/assets/images/portrait.jpg";
+import './about.css';
+import Portait from 'src/assets/images/portrait.jpg';
 
 const renderAboutText = (aboutTextList: string[]) => (
   <div className="about-text">
-    {aboutTextList.map((textSection, i) => (
-      <p key={i}>{textSection}</p>
-    ))}
+    {aboutTextList.map((textSection, i) => <p key={i}>{textSection}</p>)}
   </div>
 );
 
@@ -15,7 +13,7 @@ interface IProps {
   aboutTextList: string[];
 }
 
-const About: React.StatelessComponent<IProps> = ({aboutTextList}) => {
+const About: React.StatelessComponent<IProps> = ({ aboutTextList }) => {
   return (
     <div className="section section-primary section-about">
       <h2>About Harvey</h2>
