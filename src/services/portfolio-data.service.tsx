@@ -10,19 +10,19 @@ export default class PortfolioDataService {
     firstName: "Harvey",
     lastName: "Delaney",
     title: "Software Engineer"
-	};
-	
-	public static readonly aboutTextList: string[] = [
-		'Hey there! My name is Harvey Delaney.',
-		`I'm a software engineer currently working at the RateSetter. I am a
+  };
+
+  public static readonly aboutTextList: string[] = [
+    "Hey there! My name is Harvey Delaney.",
+    `I'm a software engineer currently working at the RateSetter. I am a
 		fullstack software engineer that prides myself on writing clean, readable,
 		testable, extensible and scalable code.`,
-		`Outside of work, I am always looking to learn new frameworks and languages
+    `Outside of work, I am always looking to learn new frameworks and languages
 		by watching Pluralsight videos and putting this knowledge into practice by
 		undertaking my personal projects. I have, and currently read, a number of
 		well-known programming books including Clean Code and The Pragmatic
 		Programmer to learn best practice programming.`
-	];
+  ];
 
   public static readonly experienceList: IInfoCard[] = [
     {
@@ -97,160 +97,186 @@ export default class PortfolioDataService {
       description: "Studied here for both highschool and college.",
       isLast: true
     }
-	];
-	
-	public static readonly projectList: IProject[] = [
-		{
-			id: 0,
-			name: "Crypto Coaster",
-			description:{
-				overview: "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.",
-				detailed: "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.A simple web app that provides real time updates to cryptocurrency prices using their respective mascots."
-			},
-			img: "crypto-coaster.jpg",
-			tagList: [SkillEnum.js, SkillEnum.websockets, SkillEnum.jquery],
-			url: {
-				github: "https://github.com/HarveyD/crypto-coaster",
-				website: "https://www.harveydelaney.com/crypto-coaster/"
-			},
-			releaseDate: "16th Oct 2017"
-		},
-		{
-			id: 1,
-			name: "Reddit Sentiment Analyser",
-			description: {
-				overview: "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.",
-				detailed: "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.",
-			},
-			img: "reddit-sa.jpg",
-			tagList: [SkillEnum.js, SkillEnum.sass, SkillEnum.jquery, SkillEnum.node],
-			url: {
-				github: "https://github.com/HarveyD/reddit-sa",
-				website: "https://www.harveydelaney.com/reddit-sa/"
-			},
-			releaseDate: "1st April 2018"
-		},
-		{
-			id: 2,
-			name: "Compounding Savings",
-			description: {
-				overview: "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items.",
-				detailed: "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items. A web application aimed at informing the potential compounding interest benefits from not buying non-essential items."
-			},
-			img: "compounding-savings.jpg",
-			tagList: [SkillEnum.react, SkillEnum.redux, SkillEnum.sass, SkillEnum.webpack],
-			url: {
-				github: "https://github.com/HarveyD/compounding-savings/",
-				website: "https://www.harveydelaney.com/compounding-savings"
-			},
-			releaseDate: "20th May 2017"
-		},
-		{
-			id: 3,
-			name: "PooPlot",
-			description: {
-				overview: "A hybrid mobile application to help people track, view and share poops.",
-				detailed: "A hybrid mobile application to help people track, view and share poops. A hybrid mobile application to help people track, view and share poops."
-			},
-			img: "pooplot.jpg",
-			tagList: [SkillEnum.angular2, SkillEnum.ionic, SkillEnum.android, SkillEnum.node, SkillEnum.mongodb],
-			url: {
-				github: "",
-				website: "https://www.harveydelaney.com/pooplot"
-			},
-			releaseDate: "6th August 2017"
-		},
-		{
-			id: 4,
-			name: "Bruce Hall VR",
-			description: {
-				overview: "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE.",
-				detailed: "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE. A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE."
-			}, 
-			img: "bruce-hall-vr.jpg",
-			tagList: [SkillEnum.js, SkillEnum.jquery, SkillEnum.panelleum],
-			url: {
-				github: "https://github.com/HarveyD/bruce-hall-vr",
-				website: "https://www.harveydelaney.com/bruce-hall-vr"
-			},
-			releaseDate: "17th September 2017"
-		},
-		{
-			id: 5,
-			name: "Bruce Hall VR 2",
-			description: {
-				overview: "A rebuild of the Bruce Hall VR project written in React. NOT LIVE.",
-				detailed: "A rebuild of the Bruce Hall VR project written in React. NOT LIVE. A rebuild of the Bruce Hall VR project written in React. NOT LIVE."
-			},
-			img: "bruce-hall-vr-2.jpg",
-			tagList: [SkillEnum.react, SkillEnum.panelleum],
-			url: {
-				github: "https://github.com/HarveyD/bruce-hall-vr-2",
-				website: ""
-			},
-			releaseDate: "N/A"
-		},
-		{
-			id: 6,
-			name: "Repeat After Me",
-			description: {
-				overview: "A simple Simon Says clone made using HTML5 Canvas + Typescript.",
-				detailed: "A simple Simon Says clone made using HTML5 Canvas + Typescript. A simple Simon Says clone made using HTML5 Canvas + Typescript.",
-			},
-			img: "repeat-after-me.jpg",
-			tagList: [SkillEnum.js, SkillEnum.ts, SkillEnum.webpack, SkillEnum.html5],
-			url: {
-				github: "https://github.com/HarveyD/repeatafterme",
-				website: "https://www.harveydelaney.com/repeatafterme/"
-			},
-			releaseDate: "23rd July 2017"
-		},
-		{
-			id: 7,
-			name: "SpookEm",
-			description: {
-				overview: "A tile based horror/survival game made using Processing/Java. (Demo not available).",
-				detailed: "A tile based horror/survival game made using Processing/Java. (Demo not available). A tile based horror/survival game made using Processing/Java. (Demo not available)."
-			},
-			img: "spookem.jpg",
-			tagList: [SkillEnum.java, SkillEnum.processing],
-			url: {
-				github: "https://github.com/HarveyD/SpookEm",
-				website: ""
-			},
-			releaseDate: "24th October 2016"
-		}
-	];
+  ];
 
-	public static readonly skillList: SkillEnum[] = Array
-		.from(skillMap.entries())
-		.filter(([key, value]) => value.showAsDefault !== false)
-		.map(([key, value]) => key);
+  public static readonly projectList: IProject[] = [
+    {
+      id: 0,
+      name: "Crypto Coaster",
+      description: {
+        overview:
+          "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.",
+        detailed:
+          "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.A simple web app that provides real time updates to cryptocurrency prices using their respective mascots."
+      },
+      img: "crypto-coaster.jpg",
+      tagList: [SkillEnum.js, SkillEnum.websockets, SkillEnum.jquery],
+      url: {
+        github: "https://github.com/HarveyD/crypto-coaster",
+        website: "https://www.harveydelaney.com/crypto-coaster/"
+      },
+      releaseDate: "16th Oct 2017"
+    },
+    {
+      id: 1,
+      name: "Reddit Sentiment Analyser",
+      description: {
+        overview:
+          "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.",
+        detailed:
+          "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread."
+      },
+      img: "reddit-sa.jpg",
+      tagList: [SkillEnum.js, SkillEnum.sass, SkillEnum.jquery, SkillEnum.node],
+      url: {
+        github: "https://github.com/HarveyD/reddit-sa",
+        website: "https://www.harveydelaney.com/reddit-sa/"
+      },
+      releaseDate: "1st April 2018"
+    },
+    {
+      id: 2,
+      name: "Compounding Savings",
+      description: {
+        overview:
+          "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items.",
+        detailed:
+          "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items. A web application aimed at informing the potential compounding interest benefits from not buying non-essential items."
+      },
+      img: "compounding-savings.jpg",
+      tagList: [
+        SkillEnum.react,
+        SkillEnum.redux,
+        SkillEnum.sass,
+        SkillEnum.webpack
+      ],
+      url: {
+        github: "https://github.com/HarveyD/compounding-savings/",
+        website: "https://www.harveydelaney.com/compounding-savings"
+      },
+      releaseDate: "20th May 2017"
+    },
+    {
+      id: 3,
+      name: "PooPlot",
+      description: {
+        overview:
+          "A hybrid mobile application to help people track, view and share poops.",
+        detailed:
+          "A hybrid mobile application to help people track, view and share poops. A hybrid mobile application to help people track, view and share poops."
+      },
+      img: "pooplot.jpg",
+      tagList: [
+        SkillEnum.angular2,
+        SkillEnum.ionic,
+        SkillEnum.android,
+        SkillEnum.node,
+        SkillEnum.mongodb
+      ],
+      url: {
+        github: "",
+        website: "https://www.harveydelaney.com/pooplot"
+      },
+      releaseDate: "6th August 2017"
+    },
+    {
+      id: 4,
+      name: "Bruce Hall VR",
+      description: {
+        overview:
+          "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE.",
+        detailed:
+          "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE. A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE."
+      },
+      img: "bruce-hall-vr.jpg",
+      tagList: [SkillEnum.js, SkillEnum.jquery, SkillEnum.panelleum],
+      url: {
+        github: "https://github.com/HarveyD/bruce-hall-vr",
+        website: "https://www.harveydelaney.com/bruce-hall-vr"
+      },
+      releaseDate: "17th September 2017"
+    },
+    {
+      id: 5,
+      name: "Bruce Hall VR 2",
+      description: {
+        overview:
+          "A rebuild of the Bruce Hall VR project written in React. NOT LIVE.",
+        detailed:
+          "A rebuild of the Bruce Hall VR project written in React. NOT LIVE. A rebuild of the Bruce Hall VR project written in React. NOT LIVE."
+      },
+      img: "bruce-hall-vr-2.jpg",
+      tagList: [SkillEnum.react, SkillEnum.panelleum],
+      url: {
+        github: "https://github.com/HarveyD/bruce-hall-vr-2",
+        website: ""
+      },
+      releaseDate: "N/A"
+    },
+    {
+      id: 6,
+      name: "Repeat After Me",
+      description: {
+        overview:
+          "A simple Simon Says clone made using HTML5 Canvas + Typescript.",
+        detailed:
+          "A simple Simon Says clone made using HTML5 Canvas + Typescript. A simple Simon Says clone made using HTML5 Canvas + Typescript."
+      },
+      img: "repeat-after-me.jpg",
+      tagList: [SkillEnum.js, SkillEnum.ts, SkillEnum.webpack, SkillEnum.html5],
+      url: {
+        github: "https://github.com/HarveyD/repeatafterme",
+        website: "https://www.harveydelaney.com/repeatafterme/"
+      },
+      releaseDate: "23rd July 2017"
+    },
+    {
+      id: 7,
+      name: "SpookEm",
+      description: {
+        overview:
+          "A tile based horror/survival game made using Processing/Java. (Demo not available).",
+        detailed:
+          "A tile based horror/survival game made using Processing/Java. (Demo not available). A tile based horror/survival game made using Processing/Java. (Demo not available)."
+      },
+      img: "spookem.jpg",
+      tagList: [SkillEnum.java, SkillEnum.processing],
+      url: {
+        github: "https://github.com/HarveyD/SpookEm",
+        website: ""
+      },
+      releaseDate: "24th October 2016"
+    }
+  ];
 
-	public static readonly socialIconList: ISocialIcon[] = [
-		{
-			id: "ln",
-			name: "LinkedIn",
-			url: "https://www.linkedin.com/in/harvey-delaney-578150108/",
-			icon: "fa-linkedin"
-		},
-		{
-			id: "gh",
-			name: "GitHub",
-			url: "https://github.com/harveyd/",
-			icon: "fa-github"
-		},
-		{
-			id: "so",
-			name: "Stack Overflow",
-			url: "https://stackoverflow.com/users/7952076/harveyd",
-			icon: "fa-stack-overflow"
-		},
-		{
-			id: "bl",
-			name: "Harvey's Blog",
-			url: "https://blog.harveydelaney.com/",
-			icon: "fa-bars"
-		}
-	];
+  public static readonly skillList: SkillEnum[] = Array.from(skillMap.entries())
+    .filter(([key, value]) => value.showAsDefault !== false)
+    .map(([key, value]) => key);
+
+  public static readonly socialIconList: ISocialIcon[] = [
+    {
+      id: "ln",
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/harvey-delaney-578150108/",
+      icon: "fa-linkedin"
+    },
+    {
+      id: "gh",
+      name: "GitHub",
+      url: "https://github.com/harveyd/",
+      icon: "fa-github"
+    },
+    {
+      id: "so",
+      name: "Stack Overflow",
+      url: "https://stackoverflow.com/users/7952076/harveyd",
+      icon: "fa-stack-overflow"
+    },
+    {
+      id: "bl",
+      name: "Harvey's Blog",
+      url: "https://blog.harveydelaney.com/",
+      icon: "fa-bars"
+    }
+  ];
 }

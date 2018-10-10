@@ -38,10 +38,7 @@ const Project: React.StatelessComponent<IProps> = props => {
   } = props;
 
   return (
-    <div
-      onClick={() => projectClick(id)}
-      className="project-container"
-    >
+    <div onClick={() => projectClick(id)} className="project-container">
       <div className="heading">
         <div className="fa fa-circle red" />
         <div className="fa fa-circle yellow" />

@@ -9,7 +9,7 @@ interface IProps {
   skillList: SkillEnum[];
 }
 
-const Skills: React.StatelessComponent<IProps> = ({skillList}) => {
+const Skills: React.StatelessComponent<IProps> = ({ skillList }) => {
   return (
     <div className="section section-primary">
       <h2>Skills</h2>

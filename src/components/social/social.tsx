@@ -19,7 +19,10 @@ const SocialIcon: React.StatelessComponent<IProps> = props => {
   } = props;
 
   return (
-    <div className={`social-item-container ${id}`} onClick={() => window.open(url)}>
+    <div
+      className={`social-item-container ${id}`}
+      onClick={() => window.open(url)}
+    >
       <div className="icon-container">
         <i className={`icon fa ${icon}`} />
       </div>
