@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./about.css";
-import Portait from "src/assets/images/portrait.jpg";
+import './about.css';
+import Portait from 'src/assets/images/portrait.jpg';
 
 const renderAboutText = (aboutTextList: string[]) => (
   <div className="about-text">

@@ -1,9 +1,9 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./project-modal.css";
-import { IProject, IUrl } from "../project/project";
-import Skill from "../skill/skill";
-import { SkillEnum } from "../../constants";
+import './project-modal.css';
+import { IProject, IUrl } from '../project/project';
+import Skill from '../skill/skill';
+import { SkillEnum } from '../../constants';
 
 interface IProps {
   project: IProject;
@@ -42,11 +42,11 @@ const renderButtons = (url: IUrl) => (
 
 class ProjectModal extends React.Component<IProps> {
   public componentDidMount() {
-    document.body.classList.add("disable-scroll");
+    document.body.classList.add('disable-scroll');
   }
 
   public componentWillUnmount() {
-    document.body.classList.remove("disable-scroll");
+    document.body.classList.remove('disable-scroll');
   }
 
   public render() {
@@ -57,9 +57,9 @@ class ProjectModal extends React.Component<IProps> {
         description: { detailed },
         tagList,
         url,
-        releaseDate
+        releaseDate,
       },
-      modalExitEvent
+      modalExitEvent,
     } = this.props;
 
     return (

@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./contact.css";
-import SocialIcon, { ISocialIcon } from "../../components/social/social";
+import './contact.css';
+import SocialIcon, { ISocialIcon } from '../../components/social/social';
 
 interface IProps {
   socialIconList: ISocialIcon[];

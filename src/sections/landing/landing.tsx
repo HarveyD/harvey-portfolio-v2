@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./landing.css";
+import './landing.css';
 
 interface IAnimated {
   currentClass: string;
@@ -29,13 +29,13 @@ class Landing extends React.Component<IProps, IState> {
     super(props);
 
     this.state = {
-      name: { currentClass: "hide-down", animationClass: "show", delay: 150 },
-      title: { currentClass: "hide-down", animationClass: "show", delay: 450 },
+      name: { currentClass: 'hide-down', animationClass: 'show', delay: 150 },
+      title: { currentClass: 'hide-down', animationClass: 'show', delay: 450 },
       findOutMore: {
-        currentClass: "hide-down",
-        animationClass: "show",
-        delay: 600
-      }
+        currentClass: 'hide-down',
+        animationClass: 'show',
+        delay: 600,
+      },
     };
   }
 
@@ -80,7 +80,7 @@ class Landing extends React.Component<IProps, IState> {
   private animateWithDelay(key: string, animateObj: IAnimated) {
     setTimeout(() => {
       this.setState({
-        [key]: { ...animateObj, currentClass: animateObj.animationClass }
+        [key]: { ...animateObj, currentClass: animateObj.animationClass },
       });
     }, animateObj.delay);
   }

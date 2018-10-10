@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./experience.css";
-import InfoCard, { IInfoCard } from "../../components/info-card/info-card";
+import './experience.css';
+import InfoCard, { IInfoCard } from '../../components/info-card/info-card';
 
 interface IProps {
   experienceList: IInfoCard[];

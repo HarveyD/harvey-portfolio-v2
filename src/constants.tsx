@@ -24,5 +24,5 @@ export enum SkillEnum {
   websockets,
   ionic,
   panelleum,
-  processing
+  processing,
 }

@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./social.css";
+import './social.css';
 
 interface IProps {
   social: ISocialIcon;
@@ -15,7 +15,7 @@ export interface ISocialIcon {
 
 const SocialIcon: React.StatelessComponent<IProps> = props => {
   const {
-    social: { id, name, icon, url }
+    social: { id, name, icon, url },
   } = props;
 
   return (

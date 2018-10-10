@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./info-card.css";
+import './info-card.css';
 
 interface IProps {
   cardDetails: IInfoCard;
@@ -19,11 +19,11 @@ export interface IInfoCard {
 
 const InfoCard: React.StatelessComponent<IProps> = props => {
   const {
-    cardDetails: { logo, headings, description, isLast }
+    cardDetails: { logo, headings, description, isLast },
   } = props;
 
   return (
-    <div className={"info-card-container" + (isLast ? " last-card" : "")}>
+    <div className={'info-card-container' + (isLast ? ' last-card' : '')}>
       <div className="logo-container">
         <img src={require(`../../assets/images/logos/${logo}`)} />
       </div>

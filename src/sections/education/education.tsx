@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./education.css";
-import InfoCard, { IInfoCard } from "../../components/info-card/info-card";
+import './education.css';
+import InfoCard, { IInfoCard } from '../../components/info-card/info-card';
 
 interface IProps {
   educationList: IInfoCard[];

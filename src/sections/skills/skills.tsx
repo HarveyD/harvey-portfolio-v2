@@ -1,9 +1,9 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./skills.css";
+import './skills.css';
 
-import Skill from "../../components/skill/skill";
-import { SkillEnum } from "../../constants";
+import Skill from '../../components/skill/skill';
+import { SkillEnum } from '../../constants';
 
 interface IProps {
   skillList: SkillEnum[];
