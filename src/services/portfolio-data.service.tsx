@@ -19,7 +19,7 @@ export default class PortfolioDataService {
 		testable, extensible and scalable code.`,
 		`Outside of work, I am always looking to learn new frameworks and languages
 		by watching Pluralsight videos and putting this knowledge into practice by
-		undertaking my personal projects. I have and currently read a number of
+		undertaking my personal projects. I have, and currently read, a number of
 		well-known programming books including Clean Code and The Pragmatic
 		Programmer to learn best practice programming.`
 	];
