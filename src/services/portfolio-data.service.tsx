@@ -10,20 +10,19 @@ export default class PortfolioDataService {
     firstName: "Harvey",
     lastName: "Delaney",
     title: "Software Engineer"
-  };
-
-  public static readonly aboutTextList: string[] = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna.",
-    `Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus.
-		Fusce eget efficitur libero. 
-		Morbi dapibus porta quam laoreet placerat. 
-		Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. 
-		Quisque et tincidunt libero. Donec id pharetra justo.`,
-    `Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. 
-		Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. 
-		Proin sed magna egestas, egestas ante et, congue eros. 
-		In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.`
-  ];
+	};
+	
+	public static readonly aboutTextList: string[] = [
+		'Hey there! My name is Harvey Delaney.',
+		`I'm a software engineer currently working at the RateSetter. I am a
+		fullstack software engineer that prides myself on writing clean, readable,
+		testable, extensible and scalable code.`,
+		`Outside of work, I am always looking to learn new frameworks and languages
+		by watching Pluralsight videos and putting this knowledge into practice by
+		undertaking my personal projects. I have, and currently read, a number of
+		well-known programming books including Clean Code and The Pragmatic
+		Programmer to learn best practice programming.`
+	];
 
   public static readonly experienceList: IInfoCard[] = [
     {
