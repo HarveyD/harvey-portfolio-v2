@@ -41,7 +41,7 @@ export default class PortfolioDataService {
         secondary: "Software Engineer",
         tertiary: "February 2018 - July 2018"
       },
-      description: "Did some stuff"
+      description: ""
     },
     {
       logo: "cba.png",
@@ -105,7 +105,7 @@ export default class PortfolioDataService {
 			name: "Crypto Coaster",
 			description:{
 				overview: "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.",
-				detailed: "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.A simple web app that provides real time updates to cryptocurrency prices using their respective mascots."
+				detailed: "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots."
 			},
 			img: "crypto-coaster.jpg",
 			tagList: [SkillEnum.js, SkillEnum.websockets, SkillEnum.jquery],
