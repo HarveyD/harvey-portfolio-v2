@@ -114,9 +114,24 @@ export default class PortfolioDataService {
 				website: "https://www.harveydelaney.com/crypto-coaster/"
 			},
 			releaseDate: "16th Oct 2017"
+    },
+    {
+			id: 1,
+			name: "Bruce Hall VR 2",
+			description: {
+				overview: "A virtual tour of the now demolished Bruce Hall. A second iteration of the project.",
+				detailed: "A rebuild of the Bruce Hall VR project written in React."
+			},
+			img: "bruce-hall-vr-2.jpg",
+			tagList: [SkillEnum.react, SkillEnum.panelleum],
+			url: {
+				github: "https://github.com/HarveyD/bruce-hall-vr-2",
+				website: "https://www.harveydelaney.com/bruce-hall-vr-2"
+			},
+			releaseDate: "18th October 2018"
 		},
 		{
-			id: 1,
+			id: 2,
 			name: "Reddit Sentiment Analyser",
 			description: {
 				overview: "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.",
@@ -131,7 +146,7 @@ export default class PortfolioDataService {
 			releaseDate: "1st April 2018"
 		},
 		{
-			id: 2,
+			id: 3,
 			name: "Compounding Savings",
 			description: {
 				overview: "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items.",
@@ -146,7 +161,7 @@ export default class PortfolioDataService {
 			releaseDate: "20th May 2017"
 		},
 		{
-			id: 3,
+			id: 4,
 			name: "PooPlot",
 			description: {
 				overview: "A hybrid mobile application to help people track, view and share poops.",
@@ -161,7 +176,7 @@ export default class PortfolioDataService {
 			releaseDate: "6th August 2017"
 		},
 		{
-			id: 4,
+			id: 5,
 			name: "Bruce Hall VR",
 			description: {
 				overview: "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE.",
@@ -174,21 +189,6 @@ export default class PortfolioDataService {
 				website: "https://www.harveydelaney.com/bruce-hall-vr"
 			},
 			releaseDate: "17th September 2017"
-		},
-		{
-			id: 5,
-			name: "Bruce Hall VR 2",
-			description: {
-				overview: "A rebuild of the Bruce Hall VR project written in React. NOT LIVE.",
-				detailed: "A rebuild of the Bruce Hall VR project written in React. NOT LIVE. A rebuild of the Bruce Hall VR project written in React. NOT LIVE."
-			},
-			img: "bruce-hall-vr-2.jpg",
-			tagList: [SkillEnum.react, SkillEnum.panelleum],
-			url: {
-				github: "https://github.com/HarveyD/bruce-hall-vr-2",
-				website: ""
-			},
-			releaseDate: "N/A"
 		},
 		{
 			id: 6,
