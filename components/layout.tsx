@@ -6,7 +6,7 @@ type Props = {
   title?: string
 }
 
-const Layout: React.SFC<Props> = ({ children, title = 'This is the default title' }) => (
+const Layout: React.SFC<Props> = ({ children, title = "Harvey Delaney's Portfolio" }) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -15,6 +15,17 @@ const Layout: React.SFC<Props> = ({ children, title = 'This is the default title
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous" />
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
       <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet" />
+
+      <meta name="author" content="Harvey Delaney" />
+      <meta name="description" content="Harvey Delaney's Personal Website. An overview of Harvey's education history, work history, personal projects and his technical skills." />
+      <meta name="keywords" content="Harvey,Delaney,Portfolio,Personal" />
+      <meta name="theme-color" content="#f9873b" />
+
+      <meta property="og:title" content="Harvey Delaney's Portfolio" />
+      <meta property="og:description" content="Harvey Delaney's Personal Website. An overview of Harvey's education history, work history, personal projects and his technical skills." />
+      <meta property="og:image" content="https://www.harveydelaney.com/images/harvey-640.jpg" />
+
+      <link rel="shortcut icon" href="static/favicon.ico" />
     </Head>
     {children}
   </div>
