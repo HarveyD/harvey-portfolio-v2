@@ -30,6 +30,23 @@
     align-items: center;
     color: $font-light;
     z-index: 20;
+
+    .blog-container {
+      font-weight: bold;
+      font-size: 1.75rem;
+      border: 1px solid white;
+      color: white;
+      padding: 2rem;
+      margin: 1.5rem 0 0 0;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: .35s background-color ease-in-out, .35s color ease-in-out, 1s opacity ease-in-out,  1s transform ease-in-out;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
   }
 
   .container-heading {

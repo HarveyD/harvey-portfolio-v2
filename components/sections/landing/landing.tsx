@@ -11,6 +11,7 @@ interface IAnimated {
 interface IState {
   name?: IAnimated;
   title?: IAnimated;
+  blogButton?: IAnimated;
   findOutMore?: IAnimated;
 }
 
@@ -31,7 +32,8 @@ class Landing extends React.Component<IProps, IState> {
     this.state = {
       name: { currentClass: "hide-down", animationClass: "show", delay: 150 },
       title: { currentClass: "hide-down", animationClass: "show", delay: 450 },
-      findOutMore: { currentClass: "hide-down", animationClass: "show", delay: 600 }
+      blogButton: { currentClass: "hide-down", animationClass: "show", delay: 600 },
+      findOutMore: { currentClass: "hide-down", animationClass: "show", delay: 750 }
     };
   }
 
@@ -45,7 +47,7 @@ class Landing extends React.Component<IProps, IState> {
 
   public render() {
     const { userDetails } = this.props;
-    const  { name, title, findOutMore } = this.state;
+    const  { name, title, blogButton, findOutMore } = this.state;
 
     return (
       <section className="landing-container">
@@ -62,6 +64,10 @@ class Landing extends React.Component<IProps, IState> {
           >
             {userDetails.title}
           </h2>
+
+          <a href="https://blog.harveydelaney.com" className={`blog-container ${blogButton && blogButton.currentClass}`}>
+            Visit my Blog
+          </a>
         </div>
 
         <div className={`container container-footer ${findOutMore && findOutMore.currentClass}`}>
