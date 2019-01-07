@@ -26,6 +26,11 @@
         color: green;
       }
     }
+
+    a {
+      text-decoration: none;
+      color: $font-color;
+    }
   }
 
   .body {

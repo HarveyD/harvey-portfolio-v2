@@ -32,7 +32,8 @@ const Project: React.StatelessComponent<IProps> = props => {
       id,
       name,
       description: { overview },
-      img
+      img,
+      url
     },
     projectClick
   } = props;
@@ -46,7 +47,7 @@ const Project: React.StatelessComponent<IProps> = props => {
         <div className="fa fa-circle red" />
         <div className="fa fa-circle yellow" />
         <div className="fa fa-circle green" />
-        <span>{name}</span>
+        <a href={url.website} target="_blank">{name}</a>
       </div>
       <div className="body">
         <div className="overlay">
