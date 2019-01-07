@@ -21,7 +21,7 @@ const SocialIcon: React.StatelessComponent<IProps> = props => {
   return (
     <a href={url} className={`social-item-container ${id}`}>
       <div className="icon-container">
-        <i className={`icon fab ${icon}`} />
+        <i className={`icon ${icon}`} />
       </div>
       <span className="name">{name}</span>
     </a>

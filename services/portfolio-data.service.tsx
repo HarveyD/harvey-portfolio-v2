@@ -13,72 +13,88 @@ export default class PortfolioDataService {
   };
 
   public static readonly aboutTextList: string[] = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna.",
-    `Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus.
-		Fusce eget efficitur libero. 
-		Morbi dapibus porta quam laoreet placerat. 
-		Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. 
-		Quisque et tincidunt libero. Donec id pharetra justo.`,
-    `Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. 
-		Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. 
-		Proin sed magna egestas, egestas ante et, congue eros. 
-		In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.`
+    "Hey there! My name is Harvey Delaney.",
+    `I'm a software engineer currently working at the RateSetter. I am a
+		fullstack software engineer that prides myself on writing clean, readable,
+		testable, extensible and scalable code.`,
+    `Outside of work, I am always looking to learn new frameworks and languages
+		by watching Pluralsight videos and putting this knowledge into practice by
+		undertaking my personal projects. I have, and currently read, a number of
+		well-known programming books including Clean Code and The Pragmatic
+		Programmer to learn best practice programming.`
   ];
 
   public static readonly experienceList: IInfoCard[] = [
     {
-      logo: "employer-logo.svg",
+      logo: "rs.jpg",
       headings: {
-        primary: "Employer Name",
-        secondary: "Job Title",
-        tertiary: "September 2017 - Present"
+        primary: "RateSetter",
+        secondary: "Software Engineer",
+        tertiary: "July 2018 - Present"
       },
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat."
+      description: "Improving web applications to optimise the wholesale lending approval process at RateSetter. Utilising .NET, .NET Core, React, Angular 2+, SQL Server."
     },
     {
-      logo: "employer-logo.svg",
+      logo: "cba.png",
       headings: {
-        primary: "Employer Name",
-        secondary: "Job Title",
-        tertiary: "February 2017 - September 2017"
+        primary: "Commonwealth Bank of Australia",
+        secondary: "Software Engineer",
+        tertiary: "February 2018 - July 2018"
       },
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat."
+      description: ""
     },
     {
-      logo: "employer-logo.svg",
+      logo: "cba.png",
       headings: {
-        primary: "Employer Name",
-        secondary: "Job Title",
-        tertiary: "January 2016 - February 2017"
+        primary: "Commonwealth Bank of Australia",
+        secondary: "Graduate Software Engineer",
+        tertiary: "February 2017 - January 2018"
       },
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.",
+        "Created a hybrid mobile application using Cordova, Angular 2+ and .NET that greatly improved the experience branch managers have in finding suitable casual or part-time staff replacements."
+    },
+    {
+      headings: {
+        primary: "Department of Defence",
+        secondary: "Junior Developer",
+        tertiary: "March 2016 - November 2016"
+      },
+      description:
+        "Part-time Backend Developer. Involved with consulting internal clients and writing SQL stored procedures and API's in .NET that met client's data requirements.",
+      logo: "dod.gif"
+    },
+    {
+      logo: "anu.png",
+      headings: {
+        primary: "Australian National University",
+        secondary: "Senior Resident",
+        tertiary: "January 2016 - November 2017"
+      },
+      description:
+        "Senior Resident (AKA Residential Advisor) at the residential college Bruce Hall. Responsible for providing pastoral care and support for over 300 students at the college. Helped organised and facilitate numerous small and large events at the college throughout the year.",
       isLast: true
     }
   ];
 
   public static readonly educationList: IInfoCard[] = [
     {
-      logo: "education-logo.svg",
+      logo: "anu.png",
       headings: {
-        primary: "Education Institution",
-        secondary: "Education Type",
+        primary: "Australian National University",
+        secondary: "Bachelor of Software Engineering (Honours)",
         tertiary: "2013 - 2016"
       },
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat."
+        "Undertook a four year Software Engineering degree accredited by Engineers Australia."
     },
     {
-      logo: "education-logo.svg",
+      logo: "dara.png",
       headings: {
-        primary: "Education Institution",
-        secondary: "Education Type",
+        primary: "Daramalan",
+        secondary: "Secondary Education",
         tertiary: "2007 - 2012"
       },
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.",
+      description: "Studied here for both highschool and college.",
       isLast: true
     }
   ];
@@ -86,71 +102,167 @@ export default class PortfolioDataService {
   public static readonly projectList: IProject[] = [
     {
       id: 0,
-      name: "Project Name",
+      name: "Crypto Coaster",
       description: {
         overview:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.",
+          "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.",
         detailed:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "A simple web app that provides real time updates to cryptocurrency prices using their respective mascots."
       },
-      img: "portfolio.jpg",
-      tagList: [SkillEnum.ts, SkillEnum.react, SkillEnum.html5, SkillEnum.css3],
+      img: "crypto-coaster.jpg",
+      tagList: [SkillEnum.js, SkillEnum.websockets, SkillEnum.jquery],
       url: {
-        github: "https://github.com/HarveyD/seng-portfolio",
-        website: "https://www.harveydelaney.com/seng-portfolio"
+        github: "https://github.com/HarveyD/crypto-coaster",
+        website: "https://www.harveydelaney.com/crypto-coaster/"
       },
-      releaseDate: "13th Oct 2018"
+      releaseDate: "16th Oct 2017"
     },
     {
       id: 1,
-      name: "Project Name",
+      name: "Bruce Hall VR 2",
       description: {
         overview:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.",
-        detailed:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "A virtual tour of the now demolished Bruce Hall. A second iteration of the project.",
+        detailed: "A rebuild of the Bruce Hall VR project written in React."
       },
-      img: "portfolio.jpg",
-      tagList: [SkillEnum.ts, SkillEnum.react, SkillEnum.html5, SkillEnum.css3],
+      img: "bruce-hall-vr-2.jpg",
+      tagList: [SkillEnum.react, SkillEnum.panelleum],
       url: {
-        github: "https://github.com/HarveyD/seng-portfolio",
-        website: "https://www.harveydelaney.com/seng-portfolio"
+        github: "https://github.com/HarveyD/bruce-hall-vr-2",
+        website: "https://www.harveydelaney.com/bruce-hall-vr-2"
       },
-      releaseDate: "13th Oct 2018"
+      releaseDate: "18th October 2018"
     },
     {
       id: 2,
-      name: "Project Name",
+      name: "Seng Portfolio Template",
       description: {
         overview:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.",
-        detailed:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "A configurable portfolio template for Software Engineers, allow people to display their skills, education and projects. Made using React and TypeScript.",
+        detailed: `When I started working as a Software Engineer, I wanted to create my own (software engineering) portfolio website. I wanted it to display my experience, education, projects and skills. At the time, I wasn't so great at designing websites and looked around for a portfolio template which would help me get started. On Reddit, I found the devportfolio template by Ryan Fitzgerald.
+        I loved the design, simplicity and customisability of it - it had everything I wanted in a template. So I build my portfolio using the template, which is still live.
+        However, as time went on I wanted to add to the portfolio, I was restricted by how it was implemented. I found myself shoehorning new features into the project. So, I decided to create my own portfolio using a more modern stack: React, Typescript and Sass.`
       },
-      img: "portfolio.jpg",
-      tagList: [SkillEnum.ts, SkillEnum.react, SkillEnum.html5, SkillEnum.css3],
+      img: "seng-portfolio.jpg",
+      tagList: [SkillEnum.react, SkillEnum.ts, SkillEnum.html5, SkillEnum.sass],
       url: {
         github: "https://github.com/HarveyD/seng-portfolio",
         website: "https://www.harveydelaney.com/seng-portfolio"
       },
-      releaseDate: "13th Oct 2018"
+      releaseDate: "18th October 2018"
     },
     {
       id: 3,
-      name: "Project Name",
+      name: "Reddit Sentiment Analyser",
       description: {
         overview:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.",
+          "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.",
         detailed:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread."
       },
-      img: "portfolio.jpg",
-      tagList: [SkillEnum.ts, SkillEnum.react, SkillEnum.html5, SkillEnum.css3],
+      img: "reddit-sa.jpg",
+      tagList: [SkillEnum.js, SkillEnum.sass, SkillEnum.jquery, SkillEnum.node],
       url: {
-        github: "https://github.com/HarveyD/seng-portfolio",
-        website: "https://www.harveydelaney.com/seng-portfolio"
+        github: "https://github.com/HarveyD/reddit-sa",
+        website: "https://www.harveydelaney.com/reddit-sa/"
       },
-      releaseDate: "13th Oct 2018"
+      releaseDate: "1st April 2018"
+    },
+    {
+      id: 4,
+      name: "Compounding Savings",
+      description: {
+        overview:
+          "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items.",
+        detailed:
+          "A web application aimed at informing the potential compounding interest benefits from not buying non-essential items. A web application aimed at informing the potential compounding interest benefits from not buying non-essential items."
+      },
+      img: "compounding-savings.jpg",
+      tagList: [
+        SkillEnum.react,
+        SkillEnum.redux,
+        SkillEnum.sass,
+        SkillEnum.webpack
+      ],
+      url: {
+        github: "https://github.com/HarveyD/compounding-savings/",
+        website: "https://www.harveydelaney.com/compounding-savings"
+      },
+      releaseDate: "20th May 2017"
+    },
+    {
+      id: 5,
+      name: "PooPlot",
+      description: {
+        overview:
+          "A hybrid mobile application to help people track, view and share poops.",
+        detailed:
+          "A hybrid mobile application to help people track, view and share poops. A hybrid mobile application to help people track, view and share poops."
+      },
+      img: "pooplot.jpg",
+      tagList: [
+        SkillEnum.angular2,
+        SkillEnum.ionic,
+        SkillEnum.android,
+        SkillEnum.node,
+        SkillEnum.mongodb
+      ],
+      url: {
+        github: "",
+        website: "https://www.harveydelaney.com/pooplot"
+      },
+      releaseDate: "6th August 2017"
+    },
+    {
+      id: 6,
+      name: "Bruce Hall VR",
+      description: {
+        overview:
+          "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE.",
+        detailed:
+          "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE. A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE."
+      },
+      img: "bruce-hall-vr.jpg",
+      tagList: [SkillEnum.js, SkillEnum.jquery, SkillEnum.panelleum],
+      url: {
+        github: "https://github.com/HarveyD/bruce-hall-vr",
+        website: "https://www.harveydelaney.com/bruce-hall-vr"
+      },
+      releaseDate: "17th September 2017"
+    },
+    {
+      id: 7,
+      name: "Repeat After Me",
+      description: {
+        overview:
+          "A simple Simon Says clone made using HTML5 Canvas + Typescript.",
+        detailed:
+          "A simple Simon Says clone made using HTML5 Canvas + Typescript. A simple Simon Says clone made using HTML5 Canvas + Typescript."
+      },
+      img: "repeat-after-me.jpg",
+      tagList: [SkillEnum.js, SkillEnum.ts, SkillEnum.webpack, SkillEnum.html5],
+      url: {
+        github: "https://github.com/HarveyD/repeatafterme",
+        website: "https://www.harveydelaney.com/repeatafterme/"
+      },
+      releaseDate: "23rd July 2017"
+    },
+    {
+      id: 8,
+      name: "SpookEm",
+      description: {
+        overview:
+          "A tile based horror/survival game made using Processing/Java. (Demo not available).",
+        detailed:
+          "A tile based horror/survival game made using Processing/Java. (Demo not available). A tile based horror/survival game made using Processing/Java. (Demo not available)."
+      },
+      img: "spookem.jpg",
+      tagList: [SkillEnum.java, SkillEnum.processing],
+      url: {
+        github: "https://github.com/HarveyD/SpookEm",
+        website: ""
+      },
+      releaseDate: "24th October 2016"
     }
   ];
 
@@ -162,26 +274,26 @@ export default class PortfolioDataService {
     {
       id: "ln",
       name: "LinkedIn",
-      url: "https://www.linkedin.com/",
-      icon: "fa-linkedin"
+      url: "https://www.linkedin.com/in/harvey-delaney-578150108/",
+      icon: "fab fa-linkedin"
     },
     {
       id: "gh",
       name: "GitHub",
-      url: "https://github.com/",
-      icon: "fa-github"
+      url: "https://github.com/harveyd/",
+      icon: "fab fa-github"
     },
     {
       id: "so",
       name: "Stack Overflow",
-      url: "https://stackoverflow.com/",
-      icon: "fa-stack-overflow"
+      url: "https://stackoverflow.com/users/7952076/harveyd",
+      icon: "fab fa-stack-overflow"
     },
     {
-      id: "fb",
-      name: "Facebook",
-      url: "https://www.facebook.com/",
-      icon: "fa-facebook"
+      id: "bl",
+      name: "Harvey's Blog",
+      url: "https://blog.harveydelaney.com/",
+      icon: "fa fa-bars"
     }
   ];
 }
