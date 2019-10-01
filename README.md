@@ -24,6 +24,7 @@ Although I created this template from scratch, the design of the website is heav
 - Easy customisability through Sass variables and a cetranlised data portfolio location
 - SEO optimsed using [react-snap](https://github.com/stereobooster/react-snap)
 - FontAwesome4 + DevIcon available
+- [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 ## Contents
 - [Getting Started](#getting-started)
