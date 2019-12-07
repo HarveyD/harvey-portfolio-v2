@@ -101,6 +101,23 @@ export default class PortfolioDataService {
 
   public static readonly projectList: IProject[] = [
     {
+      id: 1,
+      name: "Discaper",
+      description: {
+        overview:
+          "Discaper is the best website to find, book and discuss your favourite escape rooms in Australia! Find the right escape room for you using Discaper.",
+        detailed:
+          "I saw that there was a lack of detail given to escape rooms on websites like TripAdvisor. As an escape room goer myself, I want to easily find the scariness, difficulty, theme and what other people thought about the escape room. Each operator runs their own websites which can be made by cheap web agencies and makes it very difficult to find basic information. I made Discaper an easy to navigate escape room aggregator that focuses not only on details about escape room operators, but each individual escape room an operator runs."
+      },
+      img: "discaper.jpg",
+      tagList: [SkillEnum.js, SkillEnum.react, SkillEnum.css3, SkillEnum.html5],
+      url: {
+        github: "",
+        website: "https://www.discaper.com/"
+      },
+      releaseDate: "8th July 2019"
+    },
+    {
       id: 0,
       name: "Crypto Coaster",
       description: {
@@ -231,23 +248,6 @@ export default class PortfolioDataService {
       releaseDate: "6th August 2017"
     },
     {
-      id: 7,
-      name: "Bruce Hall VR",
-      description: {
-        overview:
-          "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE.",
-        detailed:
-          "A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE. A simple tour of the old Bruce Hall before being knocked down. PROJECT NOT LIVE."
-      },
-      img: "bruce-hall-vr.jpg",
-      tagList: [SkillEnum.js, SkillEnum.jquery, SkillEnum.panelleum],
-      url: {
-        github: "https://github.com/HarveyD/bruce-hall-vr",
-        website: "https://www.harveydelaney.com/bruce-hall-vr"
-      },
-      releaseDate: "17th September 2017"
-    },
-    {
       id: 8,
       name: "Repeat After Me",
       description: {
@@ -263,23 +263,6 @@ export default class PortfolioDataService {
         website: "https://www.harveydelaney.com/repeatafterme/"
       },
       releaseDate: "23rd July 2017"
-    },
-    {
-      id: 9,
-      name: "SpookEm",
-      description: {
-        overview:
-          "A tile based horror/survival game made using Processing/Java. (Demo not available).",
-        detailed:
-          "A tile based horror/survival game made using Processing/Java. (Demo not available). A tile based horror/survival game made using Processing/Java. (Demo not available)."
-      },
-      img: "spookem.jpg",
-      tagList: [SkillEnum.java, SkillEnum.processing],
-      url: {
-        github: "https://github.com/HarveyD/SpookEm",
-        website: ""
-      },
-      releaseDate: "24th October 2016"
     }
   ];
 
