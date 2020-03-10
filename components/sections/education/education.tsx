@@ -8,18 +8,16 @@ interface IProps {
   educationList: IInfoCard[];
 }
 
-const Education: React.FunctionComponent<IProps> = ({ educationList }) => {
-  return (
-    <section className="section section-primary">
-      <h2>Education</h2>
+const Education: React.FunctionComponent<IProps> = ({ educationList }) => (
+  <section className="section section-primary">
+    <h2>Education</h2>
 
-      <div className="content-container education-container">
-        {educationList.map((exp, i) => (
-          <InfoCard key={i} cardDetails={exp} />
-        ))}
-      </div>
-    </section>
-  );
-};
+    <div className="content-container education-container">
+      {educationList.map((exp, i) => (
+        <InfoCard key={i} cardDetails={exp} />
+      ))}
+    </div>
+  </section>
+);
 
 export default Education;
