@@ -17,7 +17,7 @@ export interface IInfoCard {
   isLast?: boolean;
 }
 
-const InfoCard: React.StatelessComponent<IProps> = props => {
+const InfoCard: React.FunctionComponent<IProps> = props => {
   const {
     cardDetails: { logo, headings, description, isLast }
   } = props;
@@ -25,7 +25,7 @@ const InfoCard: React.StatelessComponent<IProps> = props => {
   return (
     <div className={"info-card-container" + (isLast ? " last-card" : "")}>
       <div className="logo-container">
-        <img src={`/static/images/logos/${logo}`} />
+        <img src={`/images/logos/${logo}`} />
       </div>
 
       <div className="details-container">

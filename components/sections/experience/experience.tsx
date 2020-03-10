@@ -1,13 +1,14 @@
 import * as React from "react";
 
-import "./experience.scss";
 import InfoCard, { IInfoCard } from "../../shared/info-card/info-card";
+
+import "./experience.scss";
 
 interface IProps {
   experienceList: IInfoCard[];
 }
 
-const Experience: React.StatelessComponent<IProps> = ({experienceList}) => {
+const Experience: React.FunctionComponent<IProps> = ({ experienceList }) => {
   return (
     <section className="section section-secondary">
       <h2>Experience</h2>

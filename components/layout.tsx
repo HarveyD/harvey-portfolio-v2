@@ -43,10 +43,7 @@ const Layout: React.SFC<Props> = ({
         property="og:description"
         content="Harvey Delaney's Personal Website. An overview of Harvey's education history, work history, personal projects and his technical skills."
       />
-      <meta
-        property="og:image"
-        content="/static/images/harvey-640x640.jpg"
-      />
+      <meta property="og:image" content="/images/harvey-640x640.jpg" />
 
       <link rel="shortcut icon" href="static/favicon.ico" />
 

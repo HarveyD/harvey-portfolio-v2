@@ -20,17 +20,13 @@ const renderTechnologies = (skillList: SkillEnum[]) =>
 const renderButtons = (url: IUrl) => (
   <div className="button-links">
     {url.github && (
-      <a href={url.github}
-        className="link-button button-github"
-      >
+      <a href={url.github} className="link-button button-github">
         Github
         <i className="fab fa-github" />
       </a>
     )}
     {url.website && (
-      <a href={url.website}
-        className="link-button button-website"
-      >
+      <a href={url.website} className="link-button button-website">
         Website
         <i className="fa fa-link" />
       </a>
@@ -68,7 +64,7 @@ class ProjectModal extends React.Component<IProps> {
           <div className="image-container">
             <img
               className="project-image"
-              src={`/static/images/projects/${img}`}
+              src={`/images/projects/${img}`}
             />
           </div>
 

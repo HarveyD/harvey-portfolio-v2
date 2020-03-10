@@ -1,15 +1,15 @@
 import * as React from "react";
 
-import "./skills.scss";
-
 import Skill from "../../shared/skill/skill";
 import { SkillEnum } from "../../../constants";
+
+import "./skills.scss";
 
 interface IProps {
   skillList: SkillEnum[];
 }
 
-const Skills: React.StatelessComponent<IProps> = ({skillList}) => {
+const Skills: React.FunctionComponent<IProps> = ({ skillList }) => {
   return (
     <section className="section section-primary">
       <h2>Skills</h2>

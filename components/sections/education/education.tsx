@@ -1,13 +1,14 @@
 import * as React from "react";
 
-import "./education.scss";
 import InfoCard, { IInfoCard } from "../../shared/info-card/info-card";
+
+import "./education.scss";
 
 interface IProps {
   educationList: IInfoCard[];
 }
 
-const Education: React.StatelessComponent<IProps> = ({educationList}) => {
+const Education: React.FunctionComponent<IProps> = ({ educationList }) => {
   return (
     <section className="section section-primary">
       <h2>Education</h2>

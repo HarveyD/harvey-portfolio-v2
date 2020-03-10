@@ -32,8 +32,16 @@ class Landing extends React.Component<IProps, IState> {
     this.state = {
       name: { currentClass: "hide-down", animationClass: "show", delay: 150 },
       title: { currentClass: "hide-down", animationClass: "show", delay: 450 },
-      blogButton: { currentClass: "hide-down", animationClass: "show", delay: 600 },
-      findOutMore: { currentClass: "hide-down", animationClass: "show", delay: 750 }
+      blogButton: {
+        currentClass: "hide-down",
+        animationClass: "show",
+        delay: 600
+      },
+      findOutMore: {
+        currentClass: "hide-down",
+        animationClass: "show",
+        delay: 750
+      }
     };
   }
 
@@ -47,31 +55,36 @@ class Landing extends React.Component<IProps, IState> {
 
   public render() {
     const { userDetails } = this.props;
-    const  { name, title, blogButton, findOutMore } = this.state;
+    const { name, title, blogButton, findOutMore } = this.state;
 
     return (
       <section className="landing-container">
         <div className="landing-overlay" />
 
         <div className="container container-heading">
-          <h1
-            className={`heading-name ${name && name.currentClass}`}
-          >
+          <h1 className={`heading-name ${name && name.currentClass}`}>
             {userDetails.firstName} {userDetails.lastName}
           </h1>
-          <h2
-            className={`heading-title ${title && title.currentClass}`}
-          >
+          <h2 className={`heading-title ${title && title.currentClass}`}>
             {userDetails.title}
           </h2>
 
-          <a href="https://blog.harveydelaney.com" className={`blog-container ${blogButton && blogButton.currentClass}`}>
+          <a
+            href="https://blog.harveydelaney.com"
+            className={`blog-container ${blogButton &&
+              blogButton.currentClass}`}
+          >
             Visit my Blog
           </a>
         </div>
 
-        <div className={`container container-footer ${findOutMore && findOutMore.currentClass}`}>
-          <span className="find-out">Find out more about {userDetails.firstName}</span>
+        <div
+          className={`container container-footer ${findOutMore &&
+            findOutMore.currentClass}`}
+        >
+          <span className="find-out">
+            Find out more about {userDetails.firstName}
+          </span>
           <i className="fa fa-chevron-down" />
         </div>
       </section>

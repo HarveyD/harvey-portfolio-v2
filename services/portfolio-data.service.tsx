@@ -32,7 +32,8 @@ export default class PortfolioDataService {
         secondary: "Software Engineer",
         tertiary: "July 2018 - Present"
       },
-      description: "Improving web applications to optimise the wholesale lending approval process at RateSetter. Utilising .NET, .NET Core, React, Angular 2+, SQL Server."
+      description:
+        "Improving web applications to optimise the wholesale lending approval process at RateSetter. Utilising .NET, .NET Core, React, Angular 2+, SQL Server."
     },
     {
       logo: "cba.png",
@@ -267,8 +268,8 @@ export default class PortfolioDataService {
   ];
 
   public static readonly skillList: SkillEnum[] = Array.from(skillMap.entries())
-    .filter(([key, value]) => value.showAsDefault !== false)
-    .map(([key, value]) => key);
+    .filter(([, value]) => value.showAsDefault !== false)
+    .map(([key]) => key);
 
   public static readonly socialIconList: ISocialIcon[] = [
     {

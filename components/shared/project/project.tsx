@@ -26,7 +26,7 @@ export interface IProject {
   releaseDate: string;
 }
 
-const Project: React.StatelessComponent<IProps> = props => {
+const Project: React.FunctionComponent<IProps> = props => {
   const {
     projectDetails: {
       id,
@@ -39,25 +39,21 @@ const Project: React.StatelessComponent<IProps> = props => {
   } = props;
 
   return (
-    <div
-      onClick={() => projectClick(id)}
-      className="project-container"
-    >
+    <div onClick={() => projectClick(id)} className="project-container">
       <div className="heading">
         <div className="fa fa-circle red" />
         <div className="fa fa-circle yellow" />
         <div className="fa fa-circle green" />
-        <a href={url.website} target="_blank">{name}</a>
+        <a href={url.website} target="_blank">
+          {name}
+        </a>
       </div>
       <div className="body">
         <div className="overlay">
           <div className="description-container">{overview}</div>
         </div>
 
-        <img
-          className="project-image"
-          src={`/static/images/projects/${img}`}
-        />
+        <img className="project-image" src={`/images/projects/${img}`} />
       </div>
     </div>
   );

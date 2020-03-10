@@ -13,7 +13,7 @@ export interface ISocialIcon {
   url: string;
 }
 
-const SocialIcon: React.StatelessComponent<IProps> = props => {
+const SocialIcon: React.FunctionComponent<IProps> = props => {
   const {
     social: { id, name, icon, url }
   } = props;

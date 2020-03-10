@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
 
-  background: url("/static/images/landing.jpg");
+  background: url("/images/landing.jpg");
   background-size: cover;
   background-attachment: fixed;
 
@@ -40,7 +40,8 @@
       margin: 1.5rem 0 0 0;
       border-radius: 1rem;
       cursor: pointer;
-      transition: .35s background-color ease-in-out, .35s color ease-in-out, 1s opacity ease-in-out,  1s transform ease-in-out;
+      transition: 0.35s background-color ease-in-out, 0.35s color ease-in-out,
+        1s opacity ease-in-out, 1s transform ease-in-out;
 
       &:hover {
         background-color: white;

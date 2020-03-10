@@ -14,12 +14,12 @@ interface IProps {
   aboutTextList: string[];
 }
 
-const About: React.StatelessComponent<IProps> = ({aboutTextList}) => {
+const About: React.FunctionComponent<IProps> = ({ aboutTextList }) => {
   return (
     <section className="section section-primary section-about">
       <h2>About Harvey</h2>
       <div className="content-container about-container">
-        <img className="portrait" src='/static/images/profile-picture.jpg' />
+        <img className="portrait" src="/images/profile-picture.jpg" />
         {renderAboutText(aboutTextList)}
       </div>
     </section>

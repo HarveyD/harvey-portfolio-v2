@@ -1,8 +1,9 @@
 import * as React from "react";
 
-import "./projects.scss";
 import Project, { IProject } from "../../shared/project/project";
 import ProjectModal from "../../shared/project-modal/project-modal";
+
+import "./projects.scss";
 
 interface IState {
   selectedProject?: IProject;

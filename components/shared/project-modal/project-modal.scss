@@ -87,7 +87,7 @@
         .button-links {
           display: flex;
           flex-direction: row;
-    
+
           .link-button {
             display: flex;
             justify-content: center;
@@ -99,24 +99,25 @@
             border: none;
             transition: 0.25s background-color ease-in-out;
             cursor: pointer;
-    
-            .fa, .fab {
+
+            .fa,
+            .fab {
               padding-left: 0.35rem;
             }
           }
-    
+
           .button-github {
             background-color: #333;
             margin-right: 1rem;
-    
+
             &:hover {
               background-color: #464646;
             }
           }
-    
+
           .button-website {
             background-color: $theme-color;
-    
+
             &:hover {
               background-color: $theme-light;
             }

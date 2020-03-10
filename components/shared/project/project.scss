@@ -69,7 +69,7 @@
         font-weight: bold;
         margin-top: 72px;
 
-        transition: .75s all ease-in-out;
+        transition: 0.75s all ease-in-out;
       }
     }
 
@@ -92,6 +92,6 @@
 
 @media only screen and (max-width: $size-small) {
   .project-container {
-      width: 100%;
+    width: 100%;
   }
 }
