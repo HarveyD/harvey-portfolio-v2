@@ -40,8 +40,8 @@
       margin: 1.5rem 0 0 0;
       border-radius: 1rem;
       cursor: pointer;
-      transition: 0.35s background-color ease-in-out, 0.35s color ease-in-out,
-        1s opacity ease-in-out, 1s transform ease-in-out;
+      transition: 0.15s background-color ease-in-out, 0.15s color ease-in-out,
+        0.15s opacity ease-in-out, 0.15s transform ease-in-out;
 
       &:hover {
         background-color: white;
@@ -85,21 +85,6 @@
 
       animation: pulse-infinite 3.5s infinite;
     }
-  }
-
-  .hide-down {
-    transform: translateY(264px);
-    opacity: 0;
-  }
-
-  .hide-up {
-    transform: translateY(-264px);
-    opacity: 0;
-  }
-
-  .show {
-    transform: translateY(0px);
-    opacity: 1;
   }
 }
 

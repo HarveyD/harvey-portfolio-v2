@@ -14,7 +14,8 @@
     "next": "^9.3.0",
     "node-sass": "^4.10.0",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "react-spring": "^8.0.27"
   },
   "devDependencies": {
     "@types/next": "^7.0.1",
