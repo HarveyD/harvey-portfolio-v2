@@ -102,7 +102,7 @@ export default class PortfolioDataService {
 
   public static readonly projectList: IProject[] = [
     {
-      id: 1,
+      id: "discaper",
       name: "Discaper",
       description: {
         overview:
@@ -119,7 +119,7 @@ export default class PortfolioDataService {
       releaseDate: "8th July 2019"
     },
     {
-      id: 0,
+      id: "crypto-coaster",
       name: "Crypto Coaster",
       description: {
         overview:
@@ -136,7 +136,7 @@ export default class PortfolioDataService {
       releaseDate: "16th Oct 2017"
     },
     {
-      id: 1,
+      id: "kourty",
       name: "Kourty",
       description: {
         overview:
@@ -153,7 +153,7 @@ export default class PortfolioDataService {
       releaseDate: "25th Dec 2018"
     },
     {
-      id: 2,
+      id: "bruce-hall-vr-2",
       name: "Bruce Hall VR 2",
       description: {
         overview:
@@ -169,7 +169,7 @@ export default class PortfolioDataService {
       releaseDate: "18th October 2018"
     },
     {
-      id: 3,
+      id: "send-portfolio-template",
       name: "Seng Portfolio Template",
       description: {
         overview:
@@ -187,7 +187,7 @@ export default class PortfolioDataService {
       releaseDate: "18th October 2018"
     },
     {
-      id: 4,
+      id: "reddit-sentiment-analyser",
       name: "Reddit Sentiment Analyser",
       description: {
         overview:
@@ -204,7 +204,7 @@ export default class PortfolioDataService {
       releaseDate: "1st April 2018"
     },
     {
-      id: 5,
+      id: "compounding-savings",
       name: "Compounding Savings",
       description: {
         overview:
@@ -226,7 +226,7 @@ export default class PortfolioDataService {
       releaseDate: "20th May 2017"
     },
     {
-      id: 6,
+      id: "pooplot",
       name: "PooPlot",
       description: {
         overview:
@@ -249,7 +249,7 @@ export default class PortfolioDataService {
       releaseDate: "6th August 2017"
     },
     {
-      id: 8,
+      id: "repeat-after-me",
       name: "Repeat After Me",
       description: {
         overview:

@@ -20,9 +20,11 @@ class Projects extends React.Component<IProps, IState> {
     this.state = { selectedProject: undefined };
   }
 
-  public handleProjectClick = (projectId: number) => {
+  public handleProjectClick = (projectId: string) => {
     this.setState({
-      selectedProject: this.props.projectList.find(x => x.id === projectId)
+      selectedProject: this.props.projectList.find(
+        project => project.id === projectId
+      )
     });
   };
 

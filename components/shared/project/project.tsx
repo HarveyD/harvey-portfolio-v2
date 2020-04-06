@@ -5,7 +5,7 @@ import { SkillEnum } from "../../../constants";
 
 interface IProps {
   projectDetails: IProject;
-  projectClick: (projectId: number) => void;
+  projectClick: (projectId: string) => void;
 }
 
 export interface IUrl {
@@ -14,7 +14,7 @@ export interface IUrl {
 }
 
 export interface IProject {
-  id: number;
+  id: string;
   name: string;
   description: {
     overview: string;
