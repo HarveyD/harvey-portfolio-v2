@@ -45,7 +45,7 @@ const Layout: React.SFC<Props> = ({
       />
       <meta property="og:image" content="/images/harvey-640x640.jpg" />
 
-      <link rel="shortcut icon" href="static/favicon.ico" />
+      <link rel="shortcut icon" href="/favicon.ico" />
 
       <script
         async

@@ -15,8 +15,7 @@ export default class PortfolioDataService {
   public static readonly aboutTextList: string[] = [
     "Hey there! My name is Harvey Delaney.",
     "I'm currently working at Amazon Web Services in Sydney. I'm a full-stack engineer with a strong preference for front-end development. I pride myself on writing clean, readable, testable and extensible code.",
-    "Outside of work, I am always looking to learn new frameworks, libraries and programming languages. To help me truly understand these technologies, I use them in my personal projects.",
-    "I also maintain a technical blog where I share my approach to solving technical problems I've encountered throughout my career. "
+    "Outside of work, I am always looking to learn new frameworks, libraries and programming languages. To help me truly understand these technologies, I use them in my personal projects. I also maintain a technical blog where I document my approach to solving technical problems I've encountered throughout my career."
   ];
 
   public static readonly experienceList: IInfoCard[] = [
