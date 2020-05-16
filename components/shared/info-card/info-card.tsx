@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import "./info-card.scss";
 
@@ -17,25 +17,26 @@ export interface IInfoCard {
   isLast?: boolean;
 }
 
-const InfoCard: React.FunctionComponent<IProps> = props => {
-  const {
-    cardDetails: { logo, headings, description, isLast }
-  } = props;
-
-  return (
-    <div className={"info-card-container" + (isLast ? " last-card" : "")}>
-      <div className="logo-container">
-        <img src={`/images/logos/${logo}`} />
-      </div>
-
-      <div className="details-container">
-        <h3>{headings.primary}</h3>
-        <h4>{headings.secondary}</h4>
-        <h5>{headings.tertiary}</h5>
-        <p>{description}</p>
-      </div>
+const InfoCard: React.FC<IProps> = ({
+  cardDetails: {
+    logo,
+    headings: { primary, secondary, tertiary },
+    description,
+    isLast,
+  },
+}) => (
+  <div className={"info-card-container" + (isLast ? " last-card" : "")}>
+    <div className="logo-container">
+      <img src={`/images/logos/${logo}`} />
     </div>
-  );
-};
+
+    <div className="details-container">
+      <h3>{primary}</h3>
+      <h4>{secondary}</h4>
+      <h5>{tertiary}</h5>
+      <p>{description}</p>
+    </div>
+  </div>
+);
 
 export default InfoCard;

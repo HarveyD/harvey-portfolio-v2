@@ -1,7 +1,8 @@
-import * as React from "react";
+import React, { useCallback } from "react";
+
+import { SkillEnum } from "../../../constants";
 
 import "./project.scss";
-import { SkillEnum } from "../../../constants";
 
 interface IProps {
   projectDetails: IProject;
@@ -26,20 +27,22 @@ export interface IProject {
   releaseDate: string;
 }
 
-const Project: React.FunctionComponent<IProps> = props => {
-  const {
-    projectDetails: {
-      id,
-      name,
-      description: { overview },
-      img,
-      url
-    },
-    projectClick
-  } = props;
+const Project: React.FC<IProps> = ({
+  projectDetails: {
+    id,
+    name,
+    description: { overview },
+    img,
+    url,
+  },
+  projectClick,
+}) => {
+  const onProjectClick = useCallback(() => {
+    projectClick(id);
+  }, [projectClick, id]);
 
   return (
-    <div onClick={() => projectClick(id)} className="project-container">
+    <div onClick={onProjectClick} className="project-container">
       <div className="heading">
         <div className="fa fa-circle red" />
         <div className="fa fa-circle yellow" />

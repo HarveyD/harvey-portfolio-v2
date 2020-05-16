@@ -8,7 +8,7 @@ type Props = {
 
 const Layout: React.SFC<Props> = ({
   children,
-  title = "Harvey Delaney's Portfolio"
+  title = "Harvey Delaney's Portfolio",
 }) => (
   <div>
     <Head>
@@ -58,7 +58,7 @@ const Layout: React.SFC<Props> = ({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'UA-98365855-2');
-          `
+          `,
         }}
       />
     </Head>

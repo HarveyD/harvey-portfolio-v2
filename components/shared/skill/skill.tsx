@@ -1,7 +1,8 @@
 import * as React from "react";
 
-import "./skill.scss";
 import { SkillEnum } from "../../../constants";
+
+import "./skill.scss";
 
 interface IProps {
   skill: SkillEnum;
@@ -11,58 +12,59 @@ interface IProps {
 export interface ISkill {
   name: string;
   icon: string;
-  showAsDefault?: boolean;
   faIcon?: string;
 }
 
-export const skillMap: Map<SkillEnum, ISkill> = new Map<SkillEnum, ISkill>([
-  [SkillEnum.html5, { name: "HTML 5", icon: "html5" }],
-  [SkillEnum.css3, { name: "CSS 3", icon: "css3" }],
-  [SkillEnum.sass, { name: "Sass", icon: "sass" }],
-  [SkillEnum.js, { name: "JavaScript", icon: "javascript" }],
-  [SkillEnum.ts, { name: "TypeScript", icon: "typescript" }],
-  [SkillEnum.jquery, { name: "JQuery", icon: "jquery" }],
-  [SkillEnum.react, { name: "React", icon: "react" }],
-  [SkillEnum.redux, { name: "Redux", icon: "", faIcon: "code" }],
-  [SkillEnum.angular2, { name: "Angular 2+", icon: "angularjs" }],
-  [SkillEnum.jasmine, { name: "Jasmine", icon: "jasmine" }],
-  [SkillEnum.webpack, { name: "Webpack", icon: "webpack" }],
-  [SkillEnum.grunt, { name: "Grunt", icon: "grunt" }],
-  [SkillEnum.gulp, { name: "Gulp", icon: "gulp" }],
-  [SkillEnum.node, { name: "Node", icon: "nodejs" }],
-  [SkillEnum.csharp, { name: "C#", icon: "csharp" }],
-  [SkillEnum.java, { name: "Java", icon: "java" }],
-  [SkillEnum.mongodb, { name: "Mongo DB", icon: "mongodb" }],
-  [SkillEnum.postgresql, { name: "PostgreSQL", icon: "postgresql" }],
-  [SkillEnum.git, { name: "Git", icon: "git" }],
-  [SkillEnum.nginx, { name: "Nginx", icon: "nginx" }],
-  [SkillEnum.vs, { name: "Visual Studio", icon: "visualstudio" }],
-  [
-    SkillEnum.android,
-    { name: "Android", icon: "android", showAsDefault: false }
-  ],
-  [
-    SkillEnum.ionic,
-    { name: "Ionic", icon: "", faIcon: "code", showAsDefault: false }
-  ],
-  [
-    SkillEnum.websockets,
-    { name: "Websockets", icon: "", faIcon: "plug", showAsDefault: false }
-  ],
-  [
-    SkillEnum.panelleum,
-    { name: "Panelleum", icon: "", faIcon: "columns", showAsDefault: false }
-  ],
-  [
-    SkillEnum.processing,
-    { name: "Processing", icon: "", faIcon: "code", showAsDefault: false }
-  ]
-]);
+export const skillDict: Record<SkillEnum, ISkill> = {
+  [SkillEnum.Html5]: { name: "HTML 5", icon: "html5" },
+  [SkillEnum.CSS3]: { name: "CSS 3", icon: "css3" },
+  [SkillEnum.SASS]: { name: "Sass", icon: "sass" },
+  [SkillEnum.JavaScript]: { name: "JavaScript", icon: "javascript" },
+  [SkillEnum.TypeScript]: { name: "TypeScript", icon: "typescript" },
+  [SkillEnum.JQuery]: { name: "JQuery", icon: "jquery" },
+  [SkillEnum.React]: { name: "React", icon: "react" },
+  [SkillEnum.Redux]: { name: "Redux", icon: "", faIcon: "code" },
+  [SkillEnum.Angular2]: { name: "Angular 2+", icon: "angularjs" },
+  [SkillEnum.Jasmine]: { name: "Jasmine", icon: "jasmine" },
+  [SkillEnum.Webpack]: { name: "Webpack", icon: "webpack" },
+  [SkillEnum.Grunt]: { name: "Grunt", icon: "grunt" },
+  [SkillEnum.Gulp]: { name: "Gulp", icon: "gulp" },
+  [SkillEnum.Node]: { name: "Node", icon: "nodejs" },
+  [SkillEnum.CSharp]: { name: "C#", icon: "csharp" },
+  [SkillEnum.Java]: { name: "Java", icon: "java" },
+  [SkillEnum.MongoDB]: { name: "Mongo DB", icon: "mongodb" },
+  [SkillEnum.PostgreSQL]: { name: "PostgreSQL", icon: "postgresql" },
+  [SkillEnum.GIT]: { name: "Git", icon: "git" },
+  [SkillEnum.NGINX]: { name: "Nginx", icon: "nginx" },
+  [SkillEnum.VisualStudio]: { name: "Visual Studio", icon: "visualstudio" },
+  [SkillEnum.Android]: {
+    name: "Android",
+    icon: "android",
+  },
+  [SkillEnum.Ionic]: {
+    name: "Ionic",
+    icon: "",
+    faIcon: "code",
+  },
+  [SkillEnum.Websockets]: {
+    name: "Websockets",
+    icon: "",
+    faIcon: "plug",
+  },
+  [SkillEnum.Panelleum]: {
+    name: "Panelleum",
+    icon: "",
+    faIcon: "columns",
+  },
+  [SkillEnum.Processing]: {
+    name: "Processing",
+    icon: "",
+    faIcon: "code",
+  },
+};
 
-const Skill: React.FunctionComponent<IProps> = props => {
-  const { skill, size } = props;
-
-  const skillDetails = skillMap.get(skill);
+const Skill: React.FunctionComponent<IProps> = ({ skill, size }) => {
+  const skillDetails = skillDict[skill];
 
   if (!skillDetails) {
     return null;

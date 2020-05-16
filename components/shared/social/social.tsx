@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import "./social.scss";
 
@@ -13,19 +13,13 @@ export interface ISocialIcon {
   url: string;
 }
 
-const SocialIcon: React.FunctionComponent<IProps> = props => {
-  const {
-    social: { id, name, icon, url }
-  } = props;
-
-  return (
-    <a href={url} className={`social-item-container ${id}`}>
-      <div className="icon-container">
-        <i className={`icon ${icon}`} />
-      </div>
-      <span className="name">{name}</span>
-    </a>
-  );
-};
+const SocialIcon: React.FC<IProps> = ({ social: { id, name, icon, url } }) => (
+  <a href={url} className={`social-item-container ${id}`}>
+    <div className="icon-container">
+      <i className={`icon ${icon}`} />
+    </div>
+    <span className="name">{name}</span>
+  </a>
+);
 
 export default SocialIcon;

@@ -12,17 +12,29 @@ import PortfolioDataService from "../services/portfolio-data.service";
 
 import "./App.scss";
 
-const App: React.FunctionComponent = () => (
-  <div className="app-container">
-    <Landing userDetails={PortfolioDataService.userDetails} />
-    <About aboutTextList={PortfolioDataService.aboutTextList} />
-    <Experience experienceList={PortfolioDataService.experienceList} />
-    <Education educationList={PortfolioDataService.educationList} />
-    <Projects projectList={PortfolioDataService.projectList} />
-    <Skills skillList={PortfolioDataService.skillList} />
-    <Contact socialIconList={PortfolioDataService.socialIconList} />
-    <Footer />
-  </div>
-);
+const App: React.FunctionComponent = () => {
+  const {
+    userDetails,
+    aboutTextList,
+    experienceList,
+    educationList,
+    projectList,
+    skillList,
+    socialIconList,
+  } = PortfolioDataService;
+
+  return (
+    <div className="app-container">
+      <Landing userDetails={userDetails} />
+      <About aboutTextList={aboutTextList} />
+      <Experience experienceList={experienceList} />
+      <Education educationList={educationList} />
+      <Projects projectList={projectList} />
+      <Skills skillList={skillList} />
+      <Contact socialIconList={socialIconList} />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
