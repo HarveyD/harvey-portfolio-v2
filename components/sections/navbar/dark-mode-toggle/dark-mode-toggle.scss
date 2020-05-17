@@ -21,7 +21,6 @@
     cursor: pointer;
     z-index: 100;
 
-    // "off"
     ~ .emoji:before {
       content: "🌞";
       position: absolute;
@@ -32,7 +31,6 @@
       transition: 0.2s;
     }
 
-    // "on"
     &:checked {
       ~ .emoji:before {
         content: "🌚";
