@@ -18,7 +18,7 @@
   .modal-content-container {
     display: flex;
     flex-direction: row;
-    background-color: $background-secondary;
+    background-color: var(--background-secondary);
     width: 95%;
     height: 95%;
     position: relative;
@@ -30,7 +30,7 @@
       flex-direction: column;
       flex: 4;
       padding: 0.85rem 1.05rem 1.05rem 1.05rem;
-      background-color: $background-primary;
+      background-color: var(--background-primary);
 
       .header-container {
         margin: 0 0 1.05rem 0;
@@ -95,7 +95,7 @@
             flex: 1;
             padding: 0.85rem 0 0.85rem 0;
             font-size: 1.25rem;
-            color: $font-light;
+            color: var(--font-light);
             border: none;
             transition: 0.25s background-color ease-in-out;
             cursor: pointer;
@@ -116,10 +116,10 @@
           }
 
           .button-website {
-            background-color: $theme-color;
+            background-color: var(--theme-primary);
 
             &:hover {
-              background-color: $theme-light;
+              background-color: var(--theme-primary-hover);
             }
           }
         }

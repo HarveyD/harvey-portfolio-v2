@@ -8,10 +8,9 @@
   .social-container {
     display: flex;
     flex: 1;
-    flex-direction: row !important;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    border-bottom: 1px solid $font-light;
+    border-bottom: 1px solid var(--font-light);
     padding-bottom: 2.25rem;
   }
 
@@ -28,8 +27,7 @@
 
       input,
       textarea {
-        background-color: $theme-dark;
-        color: $font-light;
+        background-color: var(--theme-secondary);
         border: none;
         border-radius: 0.25rem;
         padding: 0.75rem;
@@ -38,11 +36,11 @@
         transition: 0.25s background-color ease-in-out;
 
         &::placeholder {
-          color: $font-light;
+          color: var(--font-light);
         }
 
         &:focus {
-          background-color: $theme-darker;
+          background-color: var(--theme-secondary-hover);
         }
       }
 
@@ -53,9 +51,9 @@
       }
 
       button {
-        background-color: $theme-color;
-        border: 1px solid $font-light;
-        color: $font-light;
+        background-color: var(--theme-primary);
+        border: 1px solid var(--font-light);
+        color: var(--font-light);
         border-radius: 0.25rem;
         padding: 0.75rem;
         font-size: 1.15rem;
@@ -63,8 +61,8 @@
         cursor: pointer;
 
         &:hover {
-          background-color: $font-light;
-          color: $theme-color;
+          background-color: var(--font-light);
+          color: var(--theme-primary);
         }
       }
     }

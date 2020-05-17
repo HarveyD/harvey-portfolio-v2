@@ -2,8 +2,14 @@
 
 .app-container {
   font-family: Arial, Helvetica, sans-serif;
-  color: $font-color;
+  color: var(--font-color-secondary);
   overflow-x: hidden;
+
+  h1,
+  h2,
+  h3 {
+    color: var(--font-color-primary);
+  }
 
   h1,
   h2 {
@@ -59,7 +65,7 @@
       &:after {
         content: "";
         margin-top: 0.45rem;
-        border-bottom: 1px solid $theme-color;
+        border-bottom: 1px solid var(--theme-primary);
         width: 50%;
         position: relative;
         height: 1px;
@@ -77,18 +83,26 @@
       max-width: 968px;
     }
 
+    &.section-primary {
+      background-color: var(--background-primary);
+    }
+
     &.section-secondary {
-      background-color: $background-secondary;
+      background-color: var(--background-secondary);
     }
 
     &.section-theme {
-      background-color: $theme-color;
-      color: $font-light;
+      background-color: var(--theme-background);
+
+      h2,
+      h3 {
+        color: var(--font-light);
+      }
     }
 
     &.section-dark {
-      background-color: $dark;
-      color: $font-light;
+      background-color: var(--dark);
+      color: var(--font-light);
     }
   }
 }

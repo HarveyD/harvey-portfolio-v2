@@ -10,7 +10,7 @@ interface IProps {
 
 const Contact: React.FunctionComponent<IProps> = ({ socialIconList }) => (
   <section className="section section-theme">
-    <h2>Contact</h2>
+    <h2 id="contact">Contact</h2>
 
     <div className="contact-container">
       <div className="social-container">
@@ -20,7 +20,7 @@ const Contact: React.FunctionComponent<IProps> = ({ socialIconList }) => (
       </div>
 
       <div className="form-container">
-        <h2>Send me a message</h2>
+        <h3>Send me a message</h3>
         <form
           method="POST"
           className="form"

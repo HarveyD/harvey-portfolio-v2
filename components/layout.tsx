@@ -10,7 +10,7 @@ const Layout: React.SFC<Props> = ({
   children,
   title = "Harvey Delaney's Portfolio",
 }) => (
-  <div>
+  <div data-theme>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
