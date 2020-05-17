@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   padding: 10px;
-  opacity: 0.85;
+  opacity: 0.9;
   background-color: var(--background-primary);
   z-index: 100;
 
@@ -18,9 +18,7 @@
     .nav-item {
       color: var(--font-primary);
 
-      &:not(:last-child) {
-        padding-right: 1rem;
-      }
+      padding-right: 1rem;
     }
   }
 }

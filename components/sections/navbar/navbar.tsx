@@ -17,11 +17,14 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar-container">
       <div className="navbar-content">
-        {links.map(({ description, link }) => (
-          <a className="nav-item" href={link}>
-            {description}
-          </a>
-        ))}
+        <div className="nav-items-container">
+          {links.map(({ description, link }) => (
+            <a className="nav-item" href={link}>
+              {description}
+            </a>
+          ))}
+        </div>
+
         <DarkModeToggle />
       </div>
     </nav>

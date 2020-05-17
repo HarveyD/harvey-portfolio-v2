@@ -1,0 +1,44 @@
+.dark-mode-toggle-container {
+  position: relative;
+  width: 60px;
+
+  .slider {
+    display: block;
+    background: #eee;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .toggle {
+    opacity: 0;
+    border: 0;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+
+    // "off"
+    ~ .emoji:before {
+      content: "🌞";
+      position: absolute;
+      left: 0;
+      top: -50%;
+      font-size: 32px;
+      z-index: 1;
+      transition: 0.2s;
+    }
+
+    // "on"
+    &:checked {
+      ~ .emoji:before {
+        content: "🌚";
+        left: 100%;
+        margin-left: -1em;
+      }
+    }
+  }
+}

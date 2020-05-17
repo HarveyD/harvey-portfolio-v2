@@ -1,5 +1,7 @@
 import React, { useCallback } from "react";
 
+import "./dark-mode-toggle.scss";
+
 const DarkModeToggle: React.FC = () => {
   const onDarkModeToggle = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -11,7 +13,18 @@ const DarkModeToggle: React.FC = () => {
     []
   );
 
-  return <input type="checkbox" onChange={onDarkModeToggle} />;
+  return (
+    <div className="dark-mode-toggle-container">
+      <input
+        onChange={onDarkModeToggle}
+        type="checkbox"
+        id="toggle"
+        className="toggle"
+      />
+      <div className="emoji" />
+      <label htmlFor="toggle" className="slider" />
+    </div>
+  );
 };
 
 export default DarkModeToggle;
