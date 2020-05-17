@@ -23,8 +23,8 @@ class Projects extends React.Component<IProps, IState> {
   public handleProjectClick = (projectId: string) => {
     this.setState({
       selectedProject: this.props.projectList.find(
-        project => project.id === projectId
-      )
+        (project) => project.id === projectId
+      ),
     });
   };
 
@@ -37,11 +37,11 @@ class Projects extends React.Component<IProps, IState> {
     const { selectedProject } = this.state;
 
     return (
-      <section className="section section-secondary">
+      <section id="projects" className="section section-secondary">
         <h2>Projects</h2>
 
         <div className="projects-container">
-          {projectList.map(project => (
+          {projectList.map((project) => (
             <Project
               key={project.id}
               projectDetails={project}

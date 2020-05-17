@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const Skills: React.FunctionComponent<IProps> = ({ skillList }) => (
-  <section className="section section-primary">
+  <section id="skills" className="section section-primary">
     <h2>Skills</h2>
 
     <div className="skills-container">

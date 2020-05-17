@@ -9,8 +9,8 @@ interface IProps {
 }
 
 const Contact: React.FunctionComponent<IProps> = ({ socialIconList }) => (
-  <section className="section section-theme">
-    <h2 id="contact">Contact</h2>
+  <section id="contact" className="section section-theme">
+    <h2>Contact</h2>
 
     <div className="contact-container">
       <div className="social-container">

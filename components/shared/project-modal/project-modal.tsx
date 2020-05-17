@@ -1,9 +1,10 @@
 import * as React from "react";
 
-import "./project-modal.scss";
 import { IProject, IUrl } from "../project/project";
 import Skill from "../skill/skill";
 import { SkillEnum } from "../../../constants";
+
+import "./project-modal.scss";
 
 interface IProps {
   project: IProject;
@@ -53,19 +54,16 @@ class ProjectModal extends React.Component<IProps> {
         description: { detailed },
         tagList,
         url,
-        releaseDate
+        releaseDate,
       },
-      modalExitEvent
+      modalExitEvent,
     } = this.props;
 
     return (
       <div className="project-modal-container" onClick={modalExitEvent}>
         <div className="modal-content-container" onClick={contentClickEvent}>
           <div className="image-container">
-            <img
-              className="project-image"
-              src={`/images/projects/${img}`}
-            />
+            <img className="project-image" src={`/images/projects/${img}`} />
           </div>
 
           <div className="modal-body-container">

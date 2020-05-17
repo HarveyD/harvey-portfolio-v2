@@ -9,8 +9,8 @@ interface IProps {
 }
 
 const Experience: React.FunctionComponent<IProps> = ({ experienceList }) => (
-  <section className="section section-secondary">
-    <h2 id="experience">Experience</h2>
+  <section id="experience" className="section section-secondary">
+    <h2>Experience</h2>
 
     <div className="content-container experience-container">
       {experienceList.map((exp, i) => (

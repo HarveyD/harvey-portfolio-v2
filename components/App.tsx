@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import Landing from "./sections/landing/landing";
+import Navbar from "./sections/navbar/navbar";
 import About from "./sections/about/about";
 import Experience from "./sections/experience/experience";
 import Education from "./sections/education/education";
@@ -24,8 +25,9 @@ const App: React.FunctionComponent = () => {
   } = PortfolioDataService;
 
   return (
-    <div className="app-container">
+    <div id="portfolio-container" data-theme="" className="portfolio-container">
       <Landing userDetails={userDetails} />
+      <Navbar />
       <About aboutTextList={aboutTextList} />
       <Experience experienceList={experienceList} />
       <Education educationList={educationList} />

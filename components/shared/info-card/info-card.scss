@@ -55,9 +55,9 @@
 
 @media only screen and (max-width: $size-small) {
   .info-card-container {
-    width: 100%;
     flex-direction: column;
     padding: 1.75rem 1.65rem 0 1.65rem;
+    width: 100%;
 
     &:before {
       display: none;

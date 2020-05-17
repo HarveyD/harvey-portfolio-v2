@@ -16,8 +16,8 @@ const About: React.FunctionComponent<IProps> = ({ aboutTextList }) => {
   );
 
   return (
-    <section className="section section-primary section-about">
-      <h2 id="about">About Harvey</h2>
+    <section id="about" className="section section-primary section-about">
+      <h2>About Harvey</h2>
       <div className="content-container about-container">
         <img className="portrait" src="/images/profile-picture.jpg" />
         {renderAboutText(aboutTextList)}

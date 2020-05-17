@@ -9,8 +9,8 @@ interface IProps {
 }
 
 const Education: React.FunctionComponent<IProps> = ({ educationList }) => (
-  <section className="section section-primary">
-    <h2 id="education">Education</h2>
+  <section id="education" className="section section-primary">
+    <h2>Education</h2>
 
     <div className="content-container education-container">
       {educationList.map((exp, i) => (
