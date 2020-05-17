@@ -11,6 +11,7 @@ const links = [
   { description: "Projects", link: "/#projects" },
   { description: "Skills", link: "/#skills" },
   { description: "Contact", link: "/#contact" },
+  { description: "Blog", link: "https://blog.harveydelaney.com" },
 ];
 
 const Navbar: React.FC = () => {

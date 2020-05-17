@@ -17,8 +17,12 @@
 
     .nav-item {
       color: var(--font-primary);
-
+      transition: 0.15s color ease-in-out;
       padding-right: 1rem;
+
+      &:hover {
+        color: var(--theme-primary);
+      }
     }
   }
 }
