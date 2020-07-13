@@ -103,6 +103,28 @@ export default class PortfolioDataService {
 
   public static readonly projectList: IProject[] = [
     {
+      id: "react-component-library",
+      name: "React Component Library",
+      description: {
+        overview:
+          "A project skeleton which I created to help people get started with creating their own React component library using Rollup, Sass, TypeScript and Storybook",
+        detailed:
+          "My most popular GitHub project and blog post. The repository has receieved over 100 GitHub stars and the blog has had thousands of views. I created a React component library at work and wanted to share it with the world! Read my blog post for more details.",
+      },
+      img: "react-component-library.png",
+      tagList: [
+        SkillEnum.JavaScript,
+        SkillEnum.React,
+        SkillEnum.CSS3,
+        SkillEnum.Html5,
+      ],
+      url: {
+        github: "https://github.com/HarveyD/react-component-library",
+        website: "https://blog.harveydelaney.com/creating-your-own-react-component-library/",
+      },
+      releaseDate: "23rd November 2019",
+    },
+    {
       id: "discaper",
       name: "Discaper",
       description: {
