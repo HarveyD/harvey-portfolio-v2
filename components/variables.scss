@@ -1,5 +1,21 @@
-:root,
-[data-theme="default"] {
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-primary: #3c3c3c;
+    --background-secondary: #292929;
+    --info-border-color: #8f8f8f;
+
+    --font-color-primary: #fafafa;
+    --font-color-secondary: #bbbbbb;
+
+    --theme-primary: #f9873b;
+    --theme-primary-hover: #ff9956;
+    --theme-background: var(--background-secondary);
+    --theme-secondary: #ff8737;
+    --theme-secondary-hover: #ff771d;
+  }
+}
+
+[data-theme="light"] {
   --background-primary: #fff;
   --background-secondary: #f8f8f9;
   --info-border-color: #dcd9d9;

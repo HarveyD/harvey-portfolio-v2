@@ -21,11 +21,11 @@ const App: React.FunctionComponent = () => {
     educationList,
     projectList,
     skillList,
-    socialIconList,
+    socialIconList
   } = PortfolioDataService;
 
   return (
-    <div id="portfolio-container" data-theme="" className="portfolio-container">
+    <div id="portfolio-container" className="portfolio-container">
       <Landing userDetails={userDetails} />
       <Navbar />
       <About aboutTextList={aboutTextList} />
