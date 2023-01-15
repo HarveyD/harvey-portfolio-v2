@@ -49,7 +49,7 @@ const Layout: React.FC<Props> = ({
 
       <script
         async
-        src={`https://www.googletagmanager.com/gtag/js?id=UA-98365855-2`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-CVL99XL1GY`}
       />
       <script
         dangerouslySetInnerHTML={{
@@ -57,7 +57,8 @@ const Layout: React.FC<Props> = ({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-98365855-2');
+
+            gtag('config', 'G-CVL99XL1GY');
           `
         }}
       />
