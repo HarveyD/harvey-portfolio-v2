@@ -1,0 +1,160 @@
+:root {
+  color-scheme: dark;
+  --font-body: var(--font-sans);
+  --font-display: var(--font-sans);
+  --bg: oklch(0.18 0.008 60);
+  --bg-2: oklch(0.22 0.008 60);
+  --surface: oklch(0.24 0.008 60 / 0.82);
+  --surface-strong: oklch(0.28 0.008 60);
+  --surface-inverse: oklch(0.98 0.003 80);
+  --fg: oklch(0.96 0.005 80);
+  --fg-dim: oklch(0.72 0.008 70);
+  --fg-dimmer: oklch(0.52 0.008 70);
+  --text: var(--fg);
+  --text-muted: var(--fg-dim);
+  --text-subtle: var(--fg-dimmer);
+  --text-inverse: oklch(0.18 0.008 60);
+  --border: oklch(0.32 0.008 60);
+  --border-soft: oklch(0.26 0.008 60);
+  --border-strong: oklch(0.42 0.008 60);
+  --accent: oklch(0.78 0.14 65);
+  --accent-strong: oklch(0.82 0.14 65);
+  --accent-soft: oklch(0.78 0.14 65 / 0.14);
+  --accent-contrast: oklch(0.16 0.008 60);
+  --page-glow-primary: oklch(0.78 0.14 65 / 0.12);
+  --page-glow-secondary: oklch(0.56 0.03 145 / 0.08);
+  --header-surface-start: oklch(0.21 0.01 60 / 0.9);
+  --header-surface-end: oklch(0.19 0.01 60 / 0.76);
+  --ui-surface-subtle: oklch(0.98 0.003 80 / 0.02);
+  --ui-surface-hover: oklch(0.98 0.003 80 / 0.05);
+  --accent-ring: oklch(0.78 0.14 65 / 0.16);
+  --ui-border-accent: oklch(0.78 0.14 65 / 0.42);
+  --success-ring: oklch(0.74 0.12 145 / 0.24);
+  --project-border: oklch(0.78 0.08 65 / 0.12);
+  --project-border-strong: oklch(0.78 0.1 65 / 0.28);
+  --project-surface-start: oklch(0.25 0.01 60 / 0.94);
+  --project-surface-end: oklch(0.2 0.01 60 / 0.98);
+  --project-body-start: oklch(0.26 0.01 60 / 0.98);
+  --project-body-end: oklch(0.21 0.01 60 / 0.98);
+  --project-media-surface: oklch(0.18 0.01 60 / 0.92);
+  --project-tag-border: oklch(0.78 0.14 65 / 0.18);
+  --project-tag-surface: oklch(0.78 0.14 65 / 0.08);
+  --contact-surface-start: oklch(0.24 0.008 60 / 0.9);
+  --contact-surface-end: oklch(0.22 0.008 60 / 0.86);
+  --contact-surface-hover-end: oklch(0.3 0.02 63 / 0.3);
+  --contact-icon-watermark: oklch(0.88 0.025 78 / 0.08);
+  --page-background: var(--bg);
+  --page-background-strong: var(--bg-2);
+  --shadow-soft: 0 18px 36px rgba(0, 0, 0, 0.18);
+  --shadow-strong: 0 30px 72px rgba(0, 0, 0, 0.28);
+  --radius-lg: 0.875rem;
+  --radius-xl: 1.25rem;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: oklch(0.975 0.008 75);
+  --bg-2: oklch(0.952 0.012 72);
+  --surface: oklch(0.992 0.006 78 / 0.84);
+  --surface-strong: oklch(0.982 0.01 75);
+  --surface-inverse: oklch(0.28 0.012 60);
+  --fg: oklch(0.26 0.012 60);
+  --fg-dim: oklch(0.45 0.012 62);
+  --fg-dimmer: oklch(0.62 0.01 64);
+  --text: var(--fg);
+  --text-muted: var(--fg-dim);
+  --text-subtle: var(--fg-dimmer);
+  --text-inverse: oklch(0.985 0.004 78);
+  --border: oklch(0.88 0.01 72);
+  --border-soft: oklch(0.915 0.008 74);
+  --border-strong: oklch(0.8 0.014 70);
+  --accent: oklch(0.64 0.145 58);
+  --accent-strong: oklch(0.59 0.16 55);
+  --accent-soft: oklch(0.64 0.145 58 / 0.12);
+  --accent-contrast: oklch(0.985 0.004 78);
+  --page-glow-primary: oklch(0.74 0.11 68 / 0.18);
+  --page-glow-secondary: oklch(0.76 0.028 110 / 0.12);
+  --header-surface-start: oklch(0.978 0.008 76 / 0.9);
+  --header-surface-end: oklch(0.952 0.012 72 / 0.78);
+  --ui-surface-subtle: oklch(0.99 0.006 78 / 0.52);
+  --ui-surface-hover: oklch(0.985 0.01 75 / 0.8);
+  --accent-ring: oklch(0.64 0.145 58 / 0.12);
+  --ui-border-accent: oklch(0.64 0.145 58 / 0.34);
+  --success-ring: oklch(0.74 0.1 145 / 0.2);
+  --project-border: oklch(0.73 0.05 62 / 0.14);
+  --project-border-strong: oklch(0.69 0.09 60 / 0.28);
+  --project-surface-start: oklch(0.985 0.009 76 / 0.96);
+  --project-surface-end: oklch(0.954 0.014 73 / 0.98);
+  --project-body-start: oklch(0.986 0.01 76 / 0.98);
+  --project-body-end: oklch(0.962 0.016 73 / 0.98);
+  --project-media-surface: oklch(0.942 0.014 73 / 0.9);
+  --project-tag-border: oklch(0.64 0.145 58 / 0.22);
+  --project-tag-surface: oklch(0.64 0.145 58 / 0.1);
+  --contact-surface-start: oklch(0.988 0.008 76 / 0.94);
+  --contact-surface-end: oklch(0.962 0.014 73 / 0.98);
+  --contact-surface-hover-end: oklch(0.946 0.024 68 / 0.99);
+  --contact-icon-watermark: oklch(0.45 0.03 58 / 0.12);
+  --page-background: var(--bg);
+  --page-background-strong: var(--bg-2);
+  --shadow-soft: 0 14px 30px rgba(43, 38, 30, 0.08);
+  --shadow-strong: 0 26px 56px rgba(43, 38, 30, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, var(--page-glow-primary), transparent 26%),
+    radial-gradient(circle at top right, var(--page-glow-secondary), transparent 24%),
+    linear-gradient(180deg, var(--page-background), var(--page-background-strong));
+  color: var(--text);
+  font-family: var(--font-body), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+html.disable-scroll,
+body.disable-scroll {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.7;
+}
+
+::selection {
+  background: var(--accent-soft);
+}

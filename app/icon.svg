@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Harvey Delaney monogram</title>
+  <desc id="desc">A rounded square icon with the letters H and D.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b2821" />
+      <stop offset="100%" stop-color="#bf5d36" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)" />
+  <path d="M30 34h16v24h20V34h16v60H66V72H46v22H30z" fill="#fff7ed" />
+  <path d="M90 34h10c14 0 24 11 24 30 0 20-10 30-24 30H90zm12 14v32h2c7 0 10-6 10-16 0-10-3-16-10-16z" fill="#fff7ed" />
+</svg>

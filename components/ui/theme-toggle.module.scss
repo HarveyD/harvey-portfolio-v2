@@ -1,0 +1,55 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.2rem;
+  border: 1px solid var(--border);
+  background: var(--ui-surface-subtle);
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 0.28rem 0.55rem 0.28rem 0.32rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+  backdrop-filter: blur(18px);
+
+  &:hover {
+    transform: translateY(-1px);
+    border-color: var(--ui-border-accent);
+    background: var(--ui-surface-hover);
+    color: var(--text);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+}
+
+.label {
+  font-size: 0.73rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-subtle);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.toggle:hover .iconWrap {
+  background: var(--surface-strong);
+  color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .label {
+    display: none;
+  }
+}

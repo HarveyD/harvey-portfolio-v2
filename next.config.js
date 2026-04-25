@@ -1,3 +1,10 @@
-const withSass = require('@zeit/next-sass')
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	poweredByHeader: false,
+	reactStrictMode: true,
+	sassOptions: {
+		implementation: "sass",
+	},
+};
 
-module.exports = withSass();
+module.exports = nextConfig;
